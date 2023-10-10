@@ -4,6 +4,7 @@ target/
 !**/src/test/**/target/
 
 !**/out/
+output
 
 ### IntelliJ IDEA ###
 .idea
