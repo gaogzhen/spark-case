@@ -18,7 +18,7 @@ object Spark01_RDD_Serial {
 
     val search = new Search("h")
 
-    search.getMatch1(rdd).collect().foreach(println)
+    search.getMatch2(rdd).collect().foreach(println)
     // 关闭环境
     sc.stop()
   }
