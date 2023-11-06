@@ -1,6 +1,9 @@
 package com.gaogzhen.bigdata.spark.core.rdd.bc
 
+import org.apache.hadoop.yarn.client.api.YarnClient
 import org.apache.spark.broadcast.Broadcast
+import org.apache.spark.deploy.SparkSubmit
+import org.apache.spark.deploy.yarn.YarnClusterApplication
 import org.apache.spark.rdd.RDD
 import org.apache.spark.util.LongAccumulator
 import org.apache.spark.{SparkConf, SparkContext}
@@ -31,5 +34,10 @@ object Spark01_RDD_Bc {
         (w, (c, n))
       }
     }.collect().foreach(println)
+
+
   }
+
+  SparkSubmit
+
 }
